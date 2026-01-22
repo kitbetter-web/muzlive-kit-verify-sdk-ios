@@ -4,28 +4,28 @@
 import PackageDescription
 
 let package = Package(
-    name: "KiTverify",
+    name: "KiTverifySDK",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "KiTverify",
-            targets: ["KiTverifyTarget"]
+            name: "KiTverifySDK",
+            targets: ["KiTverifySDKTarget"]
         ),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "KiTverify",
-            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.6/KiTverify.xcframework.zip",
-            checksum: "dcd0e3c373d8bd015e319453cd48a49318586410a7063c0c15faa6f6a607612a"
+            name: "KiTverifySDK",
+            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.7/KiTverifySDK.xcframework.zip",
+            checksum: "05c8390076a711e6128ac80e15d01d94880f4a13dc3baa234a7082478a193bb6"
         ),
         .target(
-            name: "KiTverifyTarget",
+            name: "KiTverifySDKTarget",
             dependencies: [
-                "KiTverify"
+                "KiTverifySDK"
             ]
         )
     ]
