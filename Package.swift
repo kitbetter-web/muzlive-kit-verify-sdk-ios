@@ -15,20 +15,17 @@ let package = Package(
             targets: ["KiTverifyTarget"]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.5.0"),
-    ],
+    dependencies: [],
     targets: [
         .binaryTarget(
             name: "KiTverify",
-            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.2/KiTverify.xcframework.zip",
-            checksum: "a1511e05bfbee5f443a96ea5cc3ebbadd8c7ccea0ed400a066fd7e1252208a10"
+            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.3/KiTverify.xcframework.zip",
+            checksum: "331adf0b55e18184d69061a3ed77858cc7bd84f5d7881121b7bf531911e4b5c8"
         ),
         .target(
             name: "KiTverifyTarget",
             dependencies: [
-                "KiTverify",
-                .product(name: "Lottie", package: "lottie-ios")
+                "KiTverify"
             ]
         )
     ]
