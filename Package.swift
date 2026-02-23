@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "KiTverifySDK",
-            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.10/KiTverifySDK.xcframework.zip",
-            checksum: "09c29e91032e965c7a6ef1c056871f353e9eba0681db4dad281f4a2eb94c110e"
+            url: "https://github.com/kitbetter-web/muzlive-kit-verify-sdk-ios/releases/download/v0.1.0-beta.11/KiTverifySDK.xcframework.zip",
+            checksum: "2a24992a13b6c7fb10a09324b8917c45b889b7c876b078705e6c788f907a0f05"
         ),
         .target(
             name: "KiTverifySDKTarget",
